@@ -1,6 +1,8 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton"
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -29,9 +31,19 @@ const Hero = () => {
             Dynamic Web Design With Yohan
           </h2>
           <TextGenerateEffect
-            className=""
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="This is a test build"
           />
+          <p className="text-center text-[40px] md:text-5xl lg:text-6xl">
+            Hi I&apos;m Yohan a next js dev based in Sri Lanka 
+          </p>
+          <a href="#about">
+            <MagicButton
+             title="show my work"
+             icon={<FaLocationArrow/>}
+             position="right"
+             />
+          </a>
         </div>
       </div>
 
